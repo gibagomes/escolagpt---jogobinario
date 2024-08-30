@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Binário</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Importa o arquivo CSS para estilização -->
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo Binário</h1>
+        <button id="gerarNumero">Gerar Número Decimal</button> <!-- Botão para gerar um número decimal aleatório -->
+        <p>Número Decimal: <span id="numeroDecimal">0</span></p> <!-- Exibe o número decimal gerado -->
+        
+        <div class="lampadas">
+            <!-- Imagens das lâmpadas, inicialmente apagadas -->
+            <img src="images/lampada_apagada.webp" id="lampada0" alt="Lampada 0">
+            <img src="images/lampada_apagada.webp" id="lampada1" alt="Lampada 1">
+            <img src="images/lampada_apagada.webp" id="lampada2" alt="Lampada 2">
+            <img src="images/lampada_apagada.webp" id="lampada3" alt="Lampada 3">
+            <img src="images/lampada_apagada.webp" id="lampada4" alt="Lampada 4">
+            <img src="images/lampada_apagada.webp" id="lampada5" alt="Lampada 5">
+            <img src="images/lampada_apagada.webp" id="lampada6" alt="Lampada 6">
+            <img src="images/lampada_apagada.webp" id="lampada7" alt="Lampada 7">
+        </div>
+
+        <div class="caixas">
+            <!-- Caixas de input para o usuário inserir os valores binários -->
+            <input type="number" id="caixa0" class="caixa" min="0" max="1">
+            <input type="number" id="caixa1" class="caixa" min="0" max="1">
+            <input type="number" id="caixa2" class="caixa" min="0" max="1">
+            <input type="number" id="caixa3" class="caixa" min="0" max="1">
+            <input type="number" id="caixa4" class="caixa" min="0" max="1">
+            <input type="number" id="caixa5" class="caixa" min="0" max="1">
+            <input type="number" id="caixa6" class="caixa" min="0" max="1">
+            <input type="number" id="caixa7" class="caixa" min="0" max="1">
+        </div>
+
+        <button id="verificar">Verificar</button> <!-- Botão para verificar se o número binário inserido é o correto -->
+        <button id="zerar">Zerar Caixas</button> <!-- Botão para zerar as caixas de input -->
+        <button id="jogarNovamente">Jogar Novamente</button> <!-- Botão para reiniciar o jogo e os contadores -->
+        <p id="resultado"></p> <!-- Exibe o resultado do jogo -->
+        <p>Acertos: <span id="acertos">0</span> | Erros: <span id="erros">0</span></p> <!-- Contadores de acertos e erros -->
+    </div>
+    <script src="js/script.js"></script> <!-- Importa o arquivo JavaScript -->
+</body>
+</html>

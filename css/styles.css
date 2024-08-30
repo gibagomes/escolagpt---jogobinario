@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000000; /* Fundo preto */
+    color: #ccff33; /* Verde-limão para o texto */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove padding padrão do body */
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #000000; /* Fundo preto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #ccff33; /* Verde-limão */
+}
+
+.lampadas, .caixas {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 0; /* Remove gap padrão */
+}
+
+.lampadas img, .caixa {
+    width: calc(100% / 8 - 10px); /* Define a largura das lâmpadas e caixas */
+    height: 50px; /* Define a altura das lâmpadas e caixas */
+    margin-right: 10px; /* Espaçamento entre as lâmpadas e caixas */
+}
+
+.lampadas img:last-child, .caixa:last-child {
+    margin-right: 0; /* Remove a margem à direita do último item */
+}
+
+.caixa {
+    text-align: center;
+    font-size: 24px;
+    color: #ccff33; /* Verde-limão */
+    background-color: #000000; /* Fundo preto */
+    border: 2px solid #ccff33; /* Borda verde-limão */
+}
+
+button {
+    background-color: #ccff33; /* Verde-limão */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b3ff1a;
+}
+
+#resultado {
+    font-weight: bold;
+    color: #ccff33; /* Verde-limão */
+    margin-top: 20px;
+}
